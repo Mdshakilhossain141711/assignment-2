@@ -615,9 +615,108 @@ img {
 }
 
 
+/* news letter styles start */
+.newsLetter {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* .newsLetter .newsLetter-input {
+    width: 35%;
+} */
+
+.newsLetter .newsLetter-input {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+.newsLetter-input h3 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.newsLetter-input p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
 
 
 
+.newsLetter-input .newsLetter-form input {
+    width: calc(100% - 40px);
+    padding: 16px 20px;
+    background: rgba(19, 19, 24, 0.05);
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+}
+
+.newsLetter-input .newsLetter-form button {
+    border-radius: 8px;
+    background: var(--primary-color);
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+}
+
+
+
+.newsLetter .newsLetter-img {
+    background: url(../Images/Group\ 39.png), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    width: auto;
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    padding: 5px;
+}
+
+.newsLetter .newsLetter-img .img-text {
+    color: #FFF;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transform: rotate(-19.628deg);
+    transform-origin: bottom left;
+    background: var(--primary-color);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.newsLetter .newsLetter-img .img-text p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+.newsLetter .newsLetter-img .img-text h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
 
 /* responsive styles start  */
 @media screen and (max-width: 576px) {
@@ -693,7 +792,8 @@ img {
         margin-bottom: 10px;
     }
 
-    .destination .destination-img {
+    .destination .destination-img,
+    .newsLetter {
         grid-template-columns: 1fr;
     }
 
@@ -722,5 +822,9 @@ img {
     .img-content {
         width: 95%;
         padding: 5px;
+    }
+
+    .newsLetter .newsLetter-img {
+        height: 450px;
     }
 }
