@@ -34,6 +34,27 @@ img {
     width: 100%;
 }
 
+.title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.description {
+    max-width: 630px;
+    margin: 0 auto;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 /* nav styles start */
 
 .mb-view {
@@ -230,36 +251,15 @@ img {
 
 
 /* destination styles start */
-.destination .destination-content h3 {
-    color: #131318;
-    text-align: center;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
-
 .destination .destination-content {
     margin-bottom: 48px;
-}
-
-.destination .destination-content p {
-    max-width: 630px;
-    margin: 0 auto;
-    color: rgba(19, 19, 24, 0.70);
-    text-align: center;
-    font-family: Mulish;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
 }
 
 
 .destination .destination-img {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 24px;
+    gap: 20px;
 }
 
 .destination .destination-img span {
@@ -272,7 +272,7 @@ img {
 }
 
 .destination-img .maldives {
-    background-image: url(../Images/Rectangle\ 5.png);
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 5.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -285,7 +285,7 @@ img {
 }
 
 .destination-img .indonesia {
-    background-image: url(../Images/Rectangle\ 8.png);
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 8.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -298,7 +298,7 @@ img {
 }
 
 .destination-img .srilanka {
-    background-image: url(../Images/Rectangle\ 6.png);
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 6.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -311,7 +311,7 @@ img {
 }
 
 .destination-img .america {
-    background-image: url(../Images/Rectangle\ 7.png);
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 7.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -324,7 +324,7 @@ img {
 }
 
 .destination-img .kashmir {
-    background-image: url(../Images/Rectangle\ 9.png);
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 9.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -337,7 +337,7 @@ img {
 }
 
 .destination-img .bangladesh {
-    background-image: url(../Images/Rectangle\ 11.png);
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 11.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -350,7 +350,7 @@ img {
 }
 
 .destination-img .bandarban {
-    background-image: url(../Images/Rectangle\ 10.png);
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 10.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -361,6 +361,244 @@ img {
     grid-column: span 7;
     height: 300px;
 }
+
+/* choose us styles start */
+.chooseUs-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+    grid-template-areas:
+        "item-1 item-1 item-2 item-2"
+        ". item-3 item-3 .";
+    margin-top: 20px;
+}
+
+.item-1 {
+    grid-area: item-1;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.item-2 {
+    grid-area: item-2;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.item-3 {
+    grid-area: item-3;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.chooseUs-card .card {
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.chooseUs-card .card i {
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+.chooseUs-card .card h3 {
+    color: #131318;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+.chooseUs-card .card p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* discounts styles start */
+.discounts {
+    text-align: center;
+}
+
+.discounts-img {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.img-1 {
+    background: url(../Images/Group\ 39.png), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 55px;
+}
+
+.img-2 {
+    background: url(../Images/Group\ 40.png), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 55px;
+}
+
+.img-content {
+    width: 45%;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px;
+}
+
+.img-content p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.img-content p span {
+    margin-right: 20px;
+    line-height: normal;
+}
+
+.img-content p span i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.img-content h3 {
+    color: #131318;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 26px;
+}
+
+.img-content p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 16px;
+}
+
+.img-content .price {
+    color: var(--primary-color);
+    margin-top: 16px;
+}
+
+.img-content button {
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border: none;
+    padding: 14px 24px;
+    cursor: pointer;
+}
+
+.Package {
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border: none;
+    padding: 14px 24px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+/* perfect place styles start */
+.perfect-place {
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfect-place .perfect-place-content {
+    width: 45%;
+}
+
+.perfect-place .perfect-place-img {
+    width: 45%;
+
+}
+
+.perfect-place .perfect-place-img {
+    background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 40089.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfect-place .perfect-place-content h3 {
+    color: #131318;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.perfect-place .perfect-place-content p {
+    color: rgba(19, 19, 24, 0.70);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 24px 0;
+}
+
+.perfect-place .perfect-place button {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 13px 34px;
+    background: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+
+
 
 
 
@@ -436,5 +674,28 @@ img {
 
     .destination .destination-img div {
         grid-column: auto;
+    }
+
+    .chooseUs-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "item-1"
+            "item-2"
+            "item-3 ";
+
+    }
+
+    .img-1,
+    .img-2 {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .img-content {
+        width: 95%;
+        padding: 5px;
     }
 }
