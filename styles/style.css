@@ -553,6 +553,15 @@ img {
 }
 
 .perfect-place .perfect-place-img {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.perfect-place .perfect-place-img {
     background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 40089.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -579,7 +588,15 @@ img {
     margin: 24px 0;
 }
 
-.perfect-place .perfect-place button {
+.perfect-place .perfect-place-content div ul li p {
+    color: #131318;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.perfect-place .perfect-place-content button {
     color: #FFF;
     text-align: center;
     font-size: 20px;
@@ -649,16 +666,24 @@ img {
     }
 
 
-    .popular-tours {
+    .popular-tours,
+    .perfect-place {
         flex-direction: column;
     }
 
     .popular-tours .popular-tours-content,
-    .popular-tours .popular-tours-img {
+    .popular-tours .popular-tours-img,
+    .perfect-place .perfect-place-content,
+    .perfect-place .perfect-place-img {
         width: auto;
     }
 
-    .popular-tours .popular-tours-content button {
+    .perfect-place-img {
+        height: 200px;
+    }
+
+    .popular-tours .popular-tours-content button,
+    .perfect-place .perfect-place-content button {
         margin-bottom: 20px;
     }
 
